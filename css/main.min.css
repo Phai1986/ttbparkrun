@@ -1,0 +1,52 @@
+@import url(font/font.css);
+@import url(index.min.css);
+@import url(../lib/slick/slick.css);
+@import url(../lib/slick/slick-theme.css);
+* {
+  font-family: "ttb";
+}
+
+.content {
+  position: relative;
+  min-height: calc(100vh - 40px);
+}
+.content section {
+  position: relative;
+  z-index: 2;
+}
+.content .bg-top {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: url("../images/BG_sky.png") top center/100% no-repeat;
+  z-index: 1;
+}
+.content .bg-bottom {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.i-step {
+  background: url("../images/step_icon_non_active.svg") center center/100% no-repeat;
+}
+
+.step-bar > li.active .i-step {
+  background: url("../images/step_icon_active.svg") center center/100% no-repeat;
+}
+.step-bar > li.active p {
+  color: #333333;
+}
+
+.choose-pay > li.selected {
+  position: relative;
+}
+.choose-pay > li.selected::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  background: url("../images/select_icon.svg") center center/100% no-repeat;
+}/*# sourceMappingURL=main.min.css.map */

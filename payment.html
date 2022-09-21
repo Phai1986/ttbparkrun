@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TTB PARKRUN</title>
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+  <link rel="stylesheet" href="css/tailwind_out.css" />
+  <link rel="stylesheet" href="css/main.min.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="bg-white px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b border-gray-200">
+      <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <a href="https://flowbite.com/" class="flex items-center">
+          <img src="images/ttb_park_run_logo.png" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+        </a>
+        <div class="flex lg:order-2">
+          <button data-collapse-toggle="navbar-sticky" type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="navbar-sticky">
+          <ul
+            class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 items-end lg:text-[20px] md:flex-row md:space-x-8 md:mt-0 md:font-medium md:border-0 md:bg-white">
+            <li>
+              <a href="#" class="block py-2 pr-4 pl-3 rounded bg-transparent text-blue-700 md:p-0"
+                aria-current="page">หน้าหลัก</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">ซื้อบัตร
+                virtual run</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">บริจาค</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">ส่งผลวิ่ง
+                virtual run</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"><img
+                  src="images/ttb_logo.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="content">
+    <div class="bg-top w-full min-h-[300px]"></div>
+    <section class="pt-[89px] pb-36 px-4 container mx-auto lg:px-0">
+      <h1 class="text-[#0050F0] text-[24px] mt-5 md:mt-10 md:text-[40px]">
+        <span class="text-[#0050F0] font-semibold">ร่วมบริจาคให้กับมูลนิธิทีทีบี </span><br class="md:hidden" /><span
+          class="text-[#f68d23] font-semibold">เพื่อส่งมอบให้</span>
+      </h1>
+      <h2 class="text-[#0050F0] mb-5 md:text-[32px] md:mb-10">
+        มูลนิธิโรงพยาบาลเด็ก มูลนิธิเด็กอ่อนในสลัม และมูลนิธิทีทีบี
+      </h2>
+      <ul
+        class="step-bar flex justify-between max-w-[700px] mx-auto relative before:absolute before:inset-x-[50px] before:h-[1px] before:bg-white before:z-[1] before:top-[23px]">
+        <li class="active min-w-[100px] relative z-[3]">
+          <div class="text-center">
+            <div class="i-step w-[47px] h-[47px] mx-auto mb-5 rounded-full border-4 border-[#b4dbf2]"></div>
+            <p class="text-[#fff]">บริจาค</p>
+          </div>
+        </li>
+        <li class="min-w-[100px] relative z-[3]">
+          <div class="text-center">
+            <div class="i-step w-[47px] h-[47px] mx-auto mb-5 rounded-full border-4 border-[#b4dbf2]"></div>
+            <p class="text-[#fff]">ข้อมูลบริจาค</p>
+          </div>
+        </li>
+        <li class="min-w-[100px] relative z-[3]">
+          <div class="text-center">
+            <div class="i-step w-[47px] h-[47px] mx-auto mb-5 rounded-full border-4 border-[#b4dbf2]"></div>
+            <p class="text-[#fff]">ยืนยันข้อมูล</p>
+          </div>
+        </li>
+      </ul>
+      <!-- Step 1 -->
+      <div id="step-1">
+        <div class="w-full text-center mt-10 mb-12">
+          <h5 class="text-[#0050F0]">เลือกรูปแบบการชำระเงิน</h5>
+        </div>
+        <div class="w-full mb-12">
+          <ul class="choose-pay w-full max-w-100 mx-auto md:columns-2 md:gap-8 lg:max-w-[900px]">
+            <li class="w-full bg-white rounded-[15px] text-center min-h-[300px] cursor-pointer selected"
+              data-payment="promptpay">
+              <div class="p-4">
+                <img class="mx-auto mb-4 h-[50px]" src="images/promptpay.png" alt="" />
+                <h5 class="font-semibold text-[#0050F0]">
+                  บริจาคเงินผ่าน QR Code ด้วย Mobile Banking ของ<br />ธนาคารของคุณ
+                </h5>
+                <p class="text-[#0050F0]">
+                  ท่านไม่ต้องขอใบเสร็จเพื่อลดหย่อนภาษี
+                  หากบริจาคผ่านหน่วยรับบริจาคที่เข้าร่วมโครงการ e-donation
+                  ของกรมสรรพากร
+                </p>
+              </div>
+            </li>
+            <li class="w-full bg-white rounded-[15px] text-center min-h-[300px] grayscale cursor-pointer"
+              data-payment="credits">
+              <div class="p-4">
+                <img class="mx-auto mb-4 h-[50px]" src="images/visa_master_card.png" alt="" />
+                <h5 class="font-semibold text-[#0050F0]">
+                  บริจาคเงินผ่าน บัตรเครดิต/บัตรเดบิต
+                </h5>
+                <p class="text-[#0050F0]">
+                  หากท่านต้องการใบเสร็จเพื่อลดหย่อนภาษี
+                  หน่วยรับบริจาคจะดำเนินการจัดส่งใบเสร็จรับเงินทางไปรษณีย์ตามที่อยู่ที่ได้ระบุไว้ภายในปีภาษี
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center">
+          <button type="button" id="to-step-2"
+            class="text-white bg-[#0050F0] hover:bg-[#0050F0] font-medium rounded-lg text-[21px] px-5 py-2.5 mr-2 mb-2 w-full max-w-[120px]">
+            ถัดไป
+          </button>
+        </div>
+      </div>
+      <!-- Step 2 -->
+      <div id="step-2" class="mt-10 hidden">
+        <form>
+          <div class="pay-by-credits hidden">
+            <div>
+              <h5 class="text-[#0050F0] font-semibold mb-7">
+                ประเภทการบริจาค
+              </h5>
+            </div>
+            <div class="grid mb-7 md:grid-cols-3">
+              <button type="button"
+                class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-[#0050F0] focus:outline-none bg-white rounded-[20px] border border-[#0050F0] hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200">
+                บริจาคครั้งเดียว
+              </button>
+            </div>
+          </div>
+          <div>
+            <h5 class="text-[#0050F0] font-semibold">
+              จำนวนเงิน <span class="text-[#F00000]">*</span>
+            </h5>
+          </div>
+          <div class="grid grid-cols-2 gap-3 mb-7 md:grid-cols-6">
+            <div class="w-full">
+              <label class="block mb-2 text-sm font-medium text-[#002D63]">&nbsp;</label>
+              <button type="button"
+                class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-[#0050F0] w-full focus:outline-none bg-white rounded-[20px] border border-[#0050F0] hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200">
+                100 บาท
+              </button>
+            </div>
+            <div class="w-full">
+              <label class="block mb-2 text-sm font-medium text-[#002D63]">&nbsp;</label>
+              <button type="button"
+                class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-[#0050F0] w-full focus:outline-none bg-white rounded-[20px] border border-[#0050F0] hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200">
+                500 บาท
+              </button>
+            </div>
+            <div class="w-full">
+              <label class="block mb-2 text-sm font-medium text-[#002D63]">&nbsp;</label>
+              <button type="button"
+                class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-[#0050F0] w-full focus:outline-none bg-white rounded-[20px] border border-[#0050F0] hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200">
+                1000 บาท
+              </button>
+            </div>
+            <div class="w-full">
+              <label for="base-input" class="block mb-2 text-sm font-medium text-[#002D63] text-center">ขั้นต่ำ 10
+                บาท</label>
+              <input type="text" id="base-input"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-[20px] focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                placeholder="กรุณาระบุจำนวนเงิน" />
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 md:gap-3">
+            <div class="w-full">
+              <label for="base-input" class="block mb-7 font-semibold text-[#0050F0]">เบอร์โทรศัพท์ที่ต้องการให้ติดต่อ
+                <span class="text-[#F00000]">*</span></label>
+              <input type="text" id="base-input"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-[20px] focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" />
+            </div>
+            <div class="w-full mt-4 md:mt-0">
+              <label for="base-input" class="block mb-7 font-semibold text-[#0050F0]">อีเมล <span
+                  class="text-[#F00000]">*</span></label>
+              <input type="text" id="base-input"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-[20px] focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" />
+              <p id="helper-text-explanation" class="mt-2 text-sm text-gray-500 dark:text-gray-400">
+                กรุณาตรวจสอบอีเมลให้ถูกต้อง
+                เนื่องจากผู้บริจาคจะได้รับใบยืนยันการบริจาคผ่านอีเมลนี้
+                กรุณากรอกอีเมล
+              </p>
+            </div>
+          </div>
+          <div class="mt-5">
+            <div class="flex items-start mb-4">
+              <input id="default-checkbox-1" type="checkbox" value=""
+                class="w-4 h-4 text-blue-600 bg-white rounded border-[#0050F0] mt-1" />
+              <label for="default-checkbox-1"
+                class="ml-2 font-medium text-[#0050F0]">ข้าพเจ้ายินยอมให้ธนาคารเปิดเผยข้อมูลส่วนบุคคลที่ได้ให้ไว้แก่ธนาคารผ่านเว็บไซต์ปันบุญแก่มูลนิธิหรือองค์กรสาธารณกุศล
+                และตกลงที่จะได้รับการติดต่อผ่านทางโทรศัพท์, Email หรือ SMS
+                เพื่อวัตถุประสงค์ในการประชาสัมพันธ์โครงการบริจาค หรือ
+                กิจกรรมของมูลนิธิหรือองค์กรสาธารณกุศลเอง</label>
+            </div>
+            <div class="flex items-start mb-4">
+              <input id="default-checkbox-2" type="checkbox" value=""
+                class="w-4 h-4 text-blue-600 bg-white rounded border-[#0050F0] mt-1" />
+              <label for="default-checkbox-2"
+                class="ml-2 font-medium text-[#0050F0]">ข้าพเจ้ายินยอมให้ธนาคารเปิดเผยข้อมูลการบริจาคนี้ให้แก่มูลนิธิหรือองค์กรสาธารณกุศล
+                เพื่อการใช้สิทธิลดหย่อนภาษี</label>
+            </div>
+          </div>
+          <div class="personal-info bg-white rounded-2xl p-4 hidden">
+            <div class="flex items-start mb-4">
+              <img src="images/document_icon.png" alt="" />
+              <h5 class="ml-2 font-semibold">
+                ข้อมูลเพื่อสิทธิประโยชน์ในการลดหย่อนภาษี
+              </h5>
+            </div>
+            <div>
+              <div class="flex items-start mb-4">
+                <input id="default-checkbox-3" type="checkbox" value=""
+                  class="w-4 h-4 text-blue-600 bg-white rounded border-[#0050F0] mt-1" />
+                <label for="default-checkbox-3" class="ml-2 font-medium text-[#0050F0]">นิติบุคคล</label>
+              </div>
+            </div>
+            <div class="niti hidden">
+              <div class="grid md:grid-cols-3 md:gap-3">
+                <div class="w-full">
+                  <div class="w-full">
+                    <label for="iden" class="block mb-5 font-semibold text-[#0050F0]">ชื่อบริษัทที่จดทะเบียน
+                      <span class="text-[#F00000]">*</span></label>
+                    <input type="text" id="iden"
+                      class="bg-[#EFF3FA] text-gray-900 text-sm rounded-[20px] block w-full p-2.5 border-0" />
+                  </div>
+                </div>
+              </div>
+              <p id="helper-text-explanation-3" class="mt-2 text-sm text-gray-500 dark:text-gray-400">
+                กรุณากรอกด้วยตัวเลขประจำตัวผู้เสียภาษีเพื่อสิทธิประโยชน์ในการลดหย่อนภาษี
+              </p>
+            </div>
+            <div class="person">
+              <div class="grid md:grid-cols-4 md:gap-3">
+                <div class="w-full">
+                  <label for="front-name" class="block mb-4 font-semibold text-[#0050F0]">คำนำหน้าชื่อ <span
+                      class="text-[#F00000]">*</span></label>
+                  <select id="front-name"
+                    class="bg-[#EFF3FA] text-gray-900 text-sm rounded-[20px] block w-full p-2.5 border-0">
+                    <option selected></option>
+                  </select>
+                </div>
+                <div class="w-full grid md:grid-cols-2 md:gap-3 md:col-span-3">
+                  <div class="w-full mt-4 md:mt-0">
+                    <label for="first-name" class="block mb-4 font-semibold text-[#0050F0]">ชื่อ <span
+                        class="text-[#F00000]">*</span></label>
+                    <input type="text" id="first-name"
+                      class="bg-[#EFF3FA] text-gray-900 text-sm rounded-[20px] block w-full p-2.5 border-0" />
+                  </div>
+                  <div class="w-full mt-4 md:mt-0">
+                    <label for="last-name" class="block mb-4 font-semibold text-[#0050F0]">นามสกุล <span
+                        class="text-[#F00000]">*</span></label>
+                    <input type="text" id="last-name"
+                      class="bg-[#EFF3FA] text-gray-900 text-sm rounded-[20px] block w-full p-2.5 border-0" />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p id="helper-text-explanation-4" class="mt-2 text-sm text-gray-500 dark:text-gray-400">
+                  กรุณากรอกด้วยชื่อ-สกุลจริงตามบัตรประชาชนเพื่อสิทธิประโยชน์ในการลดหย่อนภาษี
+                </p>
+              </div>
+            </div>
+            <div class="grid mt-4 md:grid-cols-4 md:gap-3">
+              <div class="w-full col-span-2">
+                <div class="w-full">
+                  <label for="iden" class="block mb-5 font-semibold text-[#0050F0]">เลขประจำตัวผู้เสียภาษี
+                    หรือเลขประจำตัวประชาชน
+                    <span class="text-[#F00000]">*</span></label>
+                  <input type="text" id="iden"
+                    class="bg-[#EFF3FA] text-gray-900 text-sm rounded-[20px] block w-full p-2.5 border-0" />
+                </div>
+              </div>
+            </div>
+            <div class="mb-7">
+              <p id="helper-text-explanation-2" class="mt-2 text-sm text-gray-500 dark:text-gray-400">
+                กรุณากรอกด้วยตัวเลขประจำตัวผู้เสียภาษีเพื่อสิทธิประโยชน์ในการลดหย่อนภาษี
+              </p>
+            </div>
+            <div class="flex items-start mb-4">
+              <img src="images/home_icon.png" alt="" />
+              <h5 class="ml-2 font-semibold">
+                หากท่านต้องการหลักฐานการบริจาค
+                กรุณากรอกที่อยู่สำหรับจัดส่งใบเสร็จรับเงินด้านล่างนี้<br />
+                (หน่วยรับบริจาคจะดำเนินการจัดส่งใบเสร็จรับเงินให้แก่ผู้บริจาคทางไปรษณีย์ตามที่อยู่ที่ได้ระบุไว้ภายในปีภาษี)
+              </h5>
+            </div>
+            <div class="w-full mb-4">
+              <label for="address-1" class="block mb-4 font-semibold text-[#0050F0]">ที่อยู่ <span
+                  class="text-[#F00000]">*</span></label>
+              <input type="text" id="address-1"
+                class="bg-[#EFF3FA] text-gray-900 text-sm rounded-[20px] block w-full p-2.5 border-0" />
+            </div>
+            <div class="grid mb-4 md:grid-cols-2 md:gap-3">
+              <div class="w-full">
+                <label for="province" class="block mb-4 font-semibold text-[#0050F0]">จังหวัด <span
+                    class="text-[#F00000]">*</span></label>
+                <select id="province"
+                  class="bg-[#EFF3FA] text-gray-900 text-sm rounded-[20px] block w-full p-2.5 border-0">
+                  <option selected></option>
+                </select>
+              </div>
+              <div class="w-full mt-4 md:mt-0">
+                <label for="post-code" class="block mb-4 font-semibold text-[#0050F0]">รหัสไปรษณีย์ <span
+                    class="text-[#F00000]">*</span></label>
+                <select id="post-code"
+                  class="bg-[#EFF3FA] text-gray-900 text-sm rounded-[20px] block w-full p-2.5 border-0">
+                  <option selected></option>
+                </select>
+              </div>
+            </div>
+            <div class="grid mb-4 md:grid-cols-2 md:gap-3">
+              <div class="w-full">
+                <label for="sub-district" class="block mb-4 font-semibold text-[#0050F0]">ตำบล <span
+                    class="text-[#F00000]">*</span></label>
+                <select id="sub-district"
+                  class="bg-[#EFF3FA] text-gray-900 text-sm rounded-[20px] block w-full p-2.5 border-0">
+                  <option selected></option>
+                </select>
+              </div>
+              <div class="w-full mt-4 md:mt-0">
+                <label for="district" class="block mb-4 font-semibold text-[#0050F0]">อำเภอ <span
+                    class="text-[#F00000]">*</span></label>
+                <select id="district"
+                  class="bg-[#EFF3FA] text-gray-900 text-sm rounded-[20px] block w-full p-2.5 border-0">
+                  <option selected></option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="text-center mt-10">
+          <button type="button" id="to-step-3"
+            class="text-white bg-[#0050F0] hover:bg-[#0050F0] font-medium rounded-lg text-[21px] px-5 py-2.5 mr-2 mb-2 w-full max-w-[120px]">
+            ถัดไป
+          </button>
+        </div>
+      </div>
+      <!-- Step 3 -->
+      <div id="step-3" class="w-full max-w-[800px] mt-10 mx-auto hidden">
+        <div>
+          <h5 class="text-[#0050F0] font-semibold text-center mb-5">
+            ตรวจสอบข้อมูลการบริจาค
+          </h5>
+        </div>
+        <div class="flex relative bg-white rounded-[15px] items-start border border-[#0050F0] p-2 min-h-[100px] mb-4">
+          <div class="flex w-10 h-10 bg-[#EFF3FA] rounded-[15px] justify-center items-center mt-1">
+            <img src="images/receive_icon.png" alt="" />
+          </div>
+          <div class="pl-3">
+            <p>จำนวนเงินที่ต้องการบริจาค</p>
+            <p class="text-[#0050F0]">100.00 บาท</p>
+          </div>
+          <button class="absolute top-3 right-3">
+            <img src="images/edit_icon.png" alt="" />
+          </button>
+        </div>
+        <div class="flex relative bg-white rounded-[15px] items-start border border-[#0050F0] p-2 min-h-[100px] mb-4">
+          <div class="flex w-10 h-10 bg-[#EFF3FA] rounded-[15px] justify-center items-center mt-1">
+            <img src="images/phone_icon.png" alt="" />
+          </div>
+          <div class="pl-3">
+            <p>เบอร์โทรศัพท์</p>
+            <p class="text-[#0050F0]">08-1234-5678</p>
+          </div>
+          <button class="absolute top-3 right-3">
+            <img src="images/edit_icon.png" alt="" />
+          </button>
+        </div>
+        <div class="flex relative bg-white rounded-[15px] items-start border border-[#0050F0] p-2 min-h-[100px] mb-4">
+          <div class="flex w-10 h-10 bg-[#EFF3FA] rounded-[15px] justify-center items-center mt-1">
+            <img src="images/mail_icon.png" alt="" />
+          </div>
+          <div class="pl-3">
+            <p>อีเมลสำหรับจัดส่งใบยืนยันการบริจาค</p>
+            <p class="text-[#0050F0]">admin@digitiv.net</p>
+          </div>
+          <button class="absolute top-3 right-3">
+            <img src="images/edit_icon.png" alt="" />
+          </button>
+        </div>
+        <div
+          class="niti-info relative bg-white rounded-[15px] items-start border border-[#0050F0] p-2 min-h-[100px] mb-4 hidden">
+          <div class="flex w-10 h-10 bg-[#EFF3FA] rounded-[15px] justify-center items-center mt-1">
+            <img src="images/home_icon.png" alt="" />
+          </div>
+          <div class="pl-3">
+            <p class="mb-2">
+              รายละเอียดผู้บริจาคเพิ่งนำส่งข้อมูลให้กรมสรรพากร
+            </p>
+            <div class="mb-3">
+              <p class="font-semibold">ชื่อบริษัท</p>
+              <p class="text-[#0050F0]">DIGITIV CO., LTD.</p>
+            </div>
+            <div class="mb-3">
+              <p class="font-semibold">เลขประจำตัวผู้เสียภาษี</p>
+              <p class="text-[#0050F0]">1-2345-12345-12-1</p>
+            </div>
+            <div>
+              <p class="font-semibold">ที่อยู่สำหรับจัดส่งใบเสร็จ</p>
+              <p class="text-[#0050F0]">
+                54 BB Building, 11 Floor, Room 1111, Sukhumvit 21(Asoke) Road,
+                Klongtoey Nua, Wattana, Bangkok 10110
+              </p>
+            </div>
+          </div>
+          <button class="absolute top-3 right-3">
+            <img src="images/edit_icon.png" alt="" />
+          </button>
+        </div>
+        <div class="text-center mt-10">
+          <button type="button" id="to-last-step"
+            class="text-white bg-[#0050F0] hover:bg-[#0050F0] font-medium rounded-lg text-[21px] px-5 py-2.5 mr-2 mb-2 w-full max-w-[120px]">
+            ถัดไป
+          </button>
+        </div>
+      </div>
+      <!-- render PromptPayQR -->
+      <div class="prompt-pay-qr mt-10 hidden">
+        <div>
+          <h5 class="text-[#0050F0] font-semibold text-center mb-5">
+            กรุณาสแกน QR เพื่อบริจาคเงิน 100.00 บาท
+          </h5>
+        </div>
+        <div class="text-center mb-[60px]">
+          <div class="w-full max-w-[350px] mx-auto mb-4">
+            <img class="w-full" src="images/promptpay.png" alt="" />
+            <img class="w-full" src="images/mock_qr.png" alt="" />
+          </div>
+          <button class="text-[#0050F0] border border-[#0050F0] rounded-[20px] py-3 px-7">
+            บันทึกรูปภาพ QR Code
+          </button>
+        </div>
+        <div class="w-full max-w-[800px] mx-auto">
+          <div class="mb-5">
+            <h5 class="font-semibold">
+              ท่านสามารถบริจาคเงินผ่าน QR Code ด้วย Mobile Banking
+              ของธนาคารของคุณ
+            </h5>
+            <ol class="list-decimal pl-4">
+              <li>
+                <p>เลือกเมนูสแกน QR</p>
+              </li>
+              <li>
+                <p>
+                  สแกน QR ที่ปรากฎในCodeนี้ หรือ บันทึกรูปภาพ QR Code
+                  ลงเครื่องเพื่อทำการเลือกรูปภาพแทนการสแกน
+                </p>
+              </li>
+              <li>
+                <p>ตรวจสอบความถูกต้องของยอดเงินและชื่อบัญชี</p>
+              </li>
+              <li>
+                <p>
+                  เมื่อทำรายการเสร็จเรียบร้อย หน้าจอจะแสดงผลทำรายการสำเร็จ
+                </p>
+              </li>
+            </ol>
+          </div>
+          <div class="mb-5">
+            <h5 class="font-semibold text-[#0050F0]">หมายเหตุ</h5>
+          </div>
+          <div>
+            <ul class="list-disc pl-4">
+              <li class="text-[#0050F0]">
+                <p class="text-[#0050F0]">
+                  สิทธิการลดหย่อนภาษีของการบริจาคเงินผ่าน QR Code (e-donation)
+                  เป็นของผู้ที่เป็นเจ้าของบัญชีเงินฝากผู้โอนเงินบริจาคเท่านั้น
+                  และปันบุญจะนำส่งข้อมูลการบริจาคให้กรมสรรพากร
+                  เฉพาะท่านที่ให้ความยินยอมผ่าน Mobile Banking Application
+                  เท่านั้น
+                </p>
+              </li>
+              <li class="text-[#0050F0]">
+                <p class="text-[#0050F0]">
+                  ธนาคารขอสงวนสิทธิในการทำรายการ เปลี่ยนแปลง แก้ไข ยกเลิก
+                  ข้อมูลการบริจาคที่ได้รายงานต่อกรมสรรพากรแล้ว
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="bg-bottom"><img src="images/BG_grass.png" alt="" /></div>
+  </div>
+  <footer class="flex items-center justify-center bg-[#0050F0] w-full relative z-[9] h-[40px]">
+    <p class="text-white">© สงวนลิขสิทธิ์ 2563 นโยบายความเป็นส่วนตัว</p>
+  </footer>
+  <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+  <script>
+    const chooseEle = document.querySelectorAll(".choose-pay > li");
+    const checkbox1 = document.getElementById("default-checkbox-2");
+    const checkbox2 = document.getElementById("default-checkbox-3");
+    const personalInfo = document.getElementsByClassName("personal-info")[0];
+    const nitiForm = document.getElementsByClassName("niti")[0];
+    const personForm = document.getElementsByClassName("person")[0];
+    const payByCredits = document.getElementsByClassName("pay-by-credits")[0];
+    const nitiInfo = document.getElementsByClassName("niti-info")[0];
+    const btnStep1 = document.getElementById("to-step-2");
+    const btnStep2 = document.getElementById("to-step-3");
+    const btnStep3 = document.getElementById("to-last-step");
+    let paymentType = "promptpay";
+
+    chooseEle.forEach((element) => {
+      element.addEventListener("click", (e) => {
+        console.log(element);
+        chooseEle.forEach((ele) => {
+          ele.classList.remove("selected");
+          ele.classList.add("grayscale");
+        });
+        element.classList.add("selected");
+        element.classList.remove("grayscale");
+
+        if (element.getAttribute("data-payment") == "credits") {
+          paymentType = "credits";
+          payByCredits.classList.remove("hidden");
+        } else {
+          paymentType = "promptpay";
+          payByCredits.classList.add("hidden");
+        }
+      });
+    });
+
+    checkbox1.addEventListener("click", () => {
+      if (checkbox1.checked) {
+        personalInfo.classList.remove("hidden");
+      } else {
+        personalInfo.classList.add("hidden");
+      }
+    });
+
+    checkbox2.addEventListener("click", () => {
+      if (checkbox2.checked) {
+        nitiForm.classList.remove("hidden");
+        personForm.classList.add("hidden");
+        nitiInfo.classList.remove("hidden").add("flex");
+      } else {
+        nitiForm.classList.add("hidden");
+        personForm.classList.remove("hidden");
+        nitiInfo.classList.remove("flex").add("hidden");
+      }
+    });
+
+    btnStep1.addEventListener("click", () => {
+      document.getElementById("step-1").classList.add("hidden");
+      document.getElementById("step-2").classList.remove("hidden");
+
+      document
+        .querySelectorAll(".step-bar li:nth-child(2)")[0]
+        .classList.add("active");
+      document
+        .getElementsByClassName("step-bar")[0]
+        .classList.add(
+          "after:absolute",
+          "after:h-[1px]",
+          "after:bg-[#0050F0]",
+          "after:z-[2]",
+          "after:top-[23px]",
+          "after:left-[50px]",
+          "after:right-[50%]"
+        );
+    });
+
+    btnStep2.addEventListener("click", () => {
+      document.getElementById("step-2").classList.add("hidden");
+      document.getElementById("step-3").classList.remove("hidden");
+
+      document
+        .querySelectorAll(".step-bar li:last-child")[0]
+        .classList.add("active");
+      document
+        .getElementsByClassName("step-bar")[0]
+        .classList.remove("after:right-[50%]");
+      document
+        .getElementsByClassName("step-bar")[0]
+        .classList.add("after:right-[50px]");
+    });
+
+    btnStep3.addEventListener("click", () => {
+      document.getElementById("step-3").classList.add("hidden");
+      document
+        .getElementsByClassName("prompt-pay-qr")[0]
+        .classList.remove("hidden");
+    });
+  </script>
+</body>
+
+</html>
